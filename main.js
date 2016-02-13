@@ -3,6 +3,8 @@ var express = require('express');
 var app = express();
 var fs = require("fs");
 
+app.set('port', (process.env.PORT || 8081));
+
 app.use(bodyParser.json())
 
 app.get('/listUsers', function (req, res) {
@@ -79,11 +81,11 @@ app.post('/login', function (req, res) {
    });
 })
 
-var server = app.listen(8081, function () {
+var server = app.listen(app.get('port'), function () {
 
   var host = server.address().address
   var port = server.address().port
 
-  console.log("Example app listening at http://%s:%s", host, port)
+  console.log('Poco test app is running on port', app.get('port'));
 
 })
