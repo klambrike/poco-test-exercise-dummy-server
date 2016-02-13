@@ -1,6 +1,6 @@
 {
   "name": "poco-test-exercise-dummy-server",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "A simple server providing API for Android developer candidates test exercise",
   "main": "main.js",
   "scripts": {
