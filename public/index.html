@@ -5,6 +5,13 @@
 </head>
 <body>
 
+  <script type="text/javascript">
+      function setMobileWalletToken(token) {
+          console.log("token: " + token);
+          document.getElementById('token').innerHTML = "Token is set: " + token;
+      }
+  </script>
+
 <h1>Alerts tests:</h1>
 
 <button type="button"
@@ -22,7 +29,7 @@
   Token expired
 </button>
 
-<p id="test"></p>
+<p id="token">Token not set</p>
 
 </body>
 </html>
